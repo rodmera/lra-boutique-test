@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LRA Boutique — Mac Iver 440 | Demo ELMA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 580px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #d97706;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .subtitle {
+      color: #94a3b8;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+    .info-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 18px;
+      text-align: left;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    .info-box ul { list-style: none; padding-left: 0; }
+    .info-box li { margin-bottom: 6px; }
+    .info-box strong { color: #f1f5f9; }
+    .hint {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge">Ambiente de Pruebas · PLAI</div>
+    <h1>LRA Boutique</h1>
+    <p class="subtitle">Mac Iver 440, Santiago Centro</p>
+
+    <div class="info-box">
+      <ul>
+        <li><span class="status-dot"></span><strong>Asistente Virtual:</strong> ELMA</li>
+        <li>📍 <strong>Ubicación:</strong> Mac Iver 440 (Metro Bellas Artes)</li>
+        <li>👗 <strong>Especialidad:</strong> Novias, Fiesta, Trajes y Abrigos</li>
+        <li>💬 <strong>Canal de prueba:</strong> WebChat integrado en vivo con ERI</li>
+        <li>⚙️ <strong>Tenant ID:</strong> 37 (PLAI SaaS)</li>
+      </ul>
+    </div>
+
+    <p class="hint">El widget de chat se abrirá automáticamente en la esquina inferior derecha. Escribe un mensaje para interactuar con ELMA en tiempo real.</p>
+  </div>
+
+  <!-- Widget ERI Oficial de PLAI -->
+  <script src="https://eri.plai.cl/static/js/webchat-widget.js"
+          data-api-key="9be64fd6-58df-46cb-ab24-f2147ead0365"
+          data-api-url="https://eri.plai.cl"
+          data-title="ELMA · LRA Boutique"
+          data-color="#b45309"
+          data-welcome="¡Hola! Soy ELMA de LRA Boutique ✨ Te cuento que abrimos todos los días en Mac Iver 440, Santiago Centro. ¿Qué estás buscando hoy?"
+          data-prechat="false"
+          data-auto-open="1500"
+          data-welcome-replies="Novia Iglesia,Novia Civil,Trajes de Hombre,Horarios">
+  </script>
+
+</body>
+</html>
